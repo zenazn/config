@@ -1,5 +1,5 @@
 class base {
-  # TODO default classes
+  include ntp
 }
 
 node boxen {
