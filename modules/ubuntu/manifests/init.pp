@@ -10,9 +10,9 @@ class ubuntu {
   }
 
   package {[
-    'build-essential', 'bwm-ng', 'curl', 'dstat', 'gnupg', 'htop', 'iftop',
-    'iotop', 'mtr-tiny', 'netcat-openbsd', 'pv', 'ruby1.9.1', 'rubygems',
-    'screen', 'tcpdump', 'tmux', 'traceroute', 'vim'
+    'build-essential', 'bwm-ng', 'curl', 'dstat', 'git', 'gnupg', 'htop',
+    'iftop', 'iotop', 'mtr-tiny', 'netcat-openbsd', 'pv', 'ruby1.9.1',
+    'rubygems', 'screen', 'tcpdump', 'tmux', 'traceroute', 'vim'
   ]:
     ensure => installed,
     require => Exec['apt-get update']
