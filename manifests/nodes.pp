@@ -1,2 +1,2 @@
-node 'relay.avtok.com' inherits boxen {
+node 'relay.avtok.com' inherits base {
 }
