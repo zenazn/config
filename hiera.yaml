@@ -12,8 +12,8 @@
   - common
 
 :yaml:
-  :datadir: %{::confdir}/data
+  :datadir: "%{::confdir}/data"
 
 :crypt:
-  :datadir: %{::confdir}/crypt
-  :password_file: %{::confdir}/.password
+  :datadir: "%{::confdir}/crypt"
+  :password_file: "%{::confdir}/.password"
