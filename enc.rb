@@ -10,4 +10,4 @@ raise "No host provided" if node.nil?
 
 hosts = YAML.load_file('hosts.yaml')
 
-return hosts.fetch(node)
+print YAML.dump(hosts.fetch(node))
