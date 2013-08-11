@@ -5,7 +5,7 @@ define users::user {
     'groups' => []
   }
   $user_data = hiera_hash("users::users")
-  $user = merge($user_data[$name], $user_info)
+  $user = merge($defaults, $user_data[$name])
 
   user { $name:
     comment => $user['name'],
