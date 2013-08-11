@@ -1,7 +1,6 @@
 class sudoers {
   group { "sudo":
     ensure => present,
-    stage => bootstrap
   }
 
   file { "/etc/sudoers.d":
