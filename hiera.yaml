@@ -16,4 +16,4 @@
 
 :crypt:
   :datadir: "%{::confdir}/crypt"
-  :password_file: "%{::confdir}/.password"
+  :password_file: /etc/puppet/.password
