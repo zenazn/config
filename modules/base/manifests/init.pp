@@ -1,3 +1,11 @@
+class base::inner {
+  include users
+
+  $packages = hiera_array("base_packages")
+  package { $packages:
+    ensure => installed
+  }
+}
 class base {
   include stdlib
 
@@ -5,13 +13,7 @@ class base {
     before => Stage['setup']
   }
 
-  $packages = hiera_array("base_packages")
-  package { $packages:
-    ensure => installed,
-    stage => bootstrap
-  }
-
-  class { 'users':
-    stage => bootstrap
+  class { 'base::bootstrap':
+    stage => 'bootstrap'
   }
 }
