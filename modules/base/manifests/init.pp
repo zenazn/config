@@ -9,4 +9,8 @@ class base {
     ensure => installed,
     stage => bootstrap
   }
+
+  class { 'users':
+    stage => bootstrap
+  }
 }
