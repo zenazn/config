@@ -1,4 +1,4 @@
-class base::inner {
+class base::bootstrap {
   include users
 
   $packages = hiera_array("base_packages")
@@ -6,6 +6,7 @@ class base::inner {
     ensure => installed
   }
 }
+
 class base {
   include stdlib
 
