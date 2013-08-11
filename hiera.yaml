@@ -12,8 +12,8 @@
   - common
 
 :yaml:
-  :datadir: "%{::confdir}/data"
+  :datadir: /etc/puppet/data
 
 :crypt:
-  :datadir: "%{::confdir}/crypt"
+  :datadir: /etc/puppet/crypt
   :password_file: /etc/puppet/.password
