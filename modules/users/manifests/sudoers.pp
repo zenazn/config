@@ -1,4 +1,4 @@
-class sudoers {
+class users::sudoers {
   group { "sudo":
     ensure => present,
   }
