@@ -4,15 +4,15 @@
   - crypt
 
 :hierarchy:
-  - "%{::clientcert}"
-  - "%{::machine_type}"
+  - "clients/%{::clientcert}"
+  - "machines/%{::domain}/%{::machine_type}"
+  - "machines/%{::domain}"
   - "%{::lsbdistcodename}"
   - "%{::kernel}"
-  - "%{::domain}"
   - common
 
 :yaml:
-  :datadir: %{::confdir}/hiera
+  :datadir: %{::confdir}/data
 
 :crypt:
   :datadir: %{::confdir}/crypt

@@ -1,2 +1,1 @@
-import "base"
-import "nodes"
+hiera_include('classes')
