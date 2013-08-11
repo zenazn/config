@@ -14,7 +14,6 @@ class ssh {
   }
 
   package { 'ssh':
-    ensure => installed,
-    require => Exec['apt-get update']
+    ensure => installed
   }
 }

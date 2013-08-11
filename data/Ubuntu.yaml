@@ -2,3 +2,24 @@
 classes:
   - ubuntu
   - ntp
+
+base_packages:
+  - build-essential
+  - bwm-ng
+  - curl
+  - dstat
+  - git
+  - gnupg
+  - htop
+  - iftop
+  - iotop
+  - mtr-tiny
+  - netcat-openbsd
+  - pv
+  - ruby1.9.1
+  - rubygems
+  - screen
+  - tcpdump
+  - tmux
+  - traceroute
+  - vim
