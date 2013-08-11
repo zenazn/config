@@ -3,7 +3,6 @@ classes:
   - ubuntu
   - ntp
   - ssh
-  - sudoers
 
 base_packages:
   - build-essential
