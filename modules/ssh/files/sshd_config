@@ -1,0 +1,25 @@
+# sshd_config(5)
+# We're relying moderately heavily on sshd shipping with sane defaults, but we
+# manually ship a lot of the security-related settings just to make extra sure.
+
+# Basic
+Protocol 2
+Port 22
+
+# Security
+ChallengeResponseAuthentication no
+GSSAPIAuthentication no
+HostbasedAuthentication no
+KerberosAuthentication no
+PasswordAuthentication no
+PermitEmptyPasswords no
+PermitRootLogin no
+PubkeyAuthentication yes
+UsePAM yes
+UsePrivilegeSeparation yes
+
+# Nice things that Ubuntu ships with in its default conf files
+AcceptEnv LANG LC_*
+PrintMotd no
+Subsystem sftp /usr/lib/openssh/sftp-server
+X11Forwarding yes

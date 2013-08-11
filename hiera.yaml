@@ -1,0 +1,19 @@
+---
+:backends:
+  - yaml
+  - crypt
+
+:hierarchy:
+  - "%{::clientcert}"
+  - "%{::machine_type}"
+  - "%{::lsbdistcodename}"
+  - "%{::kernel}"
+  - "%{::domain}"
+  - common
+
+:yaml:
+  :datadir: %{::confdir}/hiera
+
+:crypt:
+  :datadir: %{::confdir}/crypt
+  :password_file: %{::confdir}/.password
