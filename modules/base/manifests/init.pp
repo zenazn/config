@@ -5,7 +5,8 @@ class base {
     before => Stage['setup']
   }
 
-  package { hiera_array("base_packages"):
+  $packages = hiera_array("base_packages")
+  package { $packages:
     ensure => installed,
     stage => bootstrap
   }

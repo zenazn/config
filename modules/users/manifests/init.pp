@@ -1,4 +1,5 @@
 class users ($users) {
-  users::user { $users:
+  $user_names = keys($users)
+  users::user { $user_names:
   }
 }
