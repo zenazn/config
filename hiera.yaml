@@ -8,7 +8,7 @@
   - "machines/%{::domain}/%{::machine_type}"
   - "machines/%{::domain}"
   - "%{::lsbdistcodename}"
-  - "%{::kernel}"
+  - "%{::operatingsystem}"
   - common
 
 :yaml:
