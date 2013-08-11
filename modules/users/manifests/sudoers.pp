@@ -7,6 +7,6 @@ class users::sudoers {
     ensure => directory;
   "/etc/sudoers.d/50-nopasswd":
     mode => "440",
-    content => "%sudo ALL=(ALL:ALL) NOPASSWD"
+    content => "%sudo ALL=(ALL:ALL) NOPASSWD: ALL"
   }
 }
