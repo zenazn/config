@@ -4,7 +4,7 @@
   - crypt
 
 :hierarchy:
-  - "clients/%{::clientcert}"
+  - "fqdns/%{::clientcert}"
   - "machines/%{::domain}/%{::machine_type}"
   - "machines/%{::domain}"
   - "%{::lsbdistcodename}"
