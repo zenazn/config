@@ -1,4 +1,4 @@
-class secrets::ssl {
+define secrets::ssl {
   file { "/etc/ssl/private/$name.key":
     ensure => present,
     mode => "400",
