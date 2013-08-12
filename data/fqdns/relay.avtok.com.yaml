@@ -1,0 +1,5 @@
+---
+nginx::sites:
+  - avtok.com
+  - andover09.com
+  - prom.andover09.com
