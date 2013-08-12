@@ -1,6 +1,7 @@
 ---
 classes:
   - nginx
+  - mail
 
 secrets::ssl:
   - avtok.com
