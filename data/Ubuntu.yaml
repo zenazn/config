@@ -3,6 +3,7 @@ classes:
   - ubuntu
   - ntp
   - ssh
+  - secrets
 
 base_packages:
   - build-essential
