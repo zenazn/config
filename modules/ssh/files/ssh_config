@@ -2,4 +2,5 @@
 
 Host *
   SendEnv LANG LC_*
-  HashKnownHosts no # This mostly just annoys me
+  # This mostly just annoys me
+  HashKnownHosts no
