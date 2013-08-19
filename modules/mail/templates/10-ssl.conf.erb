@@ -1,0 +1,8 @@
+##
+## SSL settings
+##
+
+ssl = required
+ssl_cert = </etc/ssl/certs/mail.<%= @domain %>.pem
+ssl_key = </etc/ssl/private/mail.<%= @domain %>.key
+ssl_cipher_list = EECDH+ECDSA+AESGCM EECDH+aRSA+AESGCM EECDH+ECDSA+SHA256 EECDH+aRSA+RC4 EDH+aRSA EECDH RC4 !aNULL !eNULL !LOW !3DES !MD5 !EXP !PSK !SRP !DSS
