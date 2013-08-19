@@ -1,0 +1,42 @@
+# Some general options
+protocols = imap sieve
+disable_plaintext_auth = yes
+ssl = yes
+ssl_cert = </etc/ssl/certs/ssl-mail.<%= @domain %>.pem
+ssl_key = </etc/ssl/private/ssl-mail.<%= @domain %>.key
+ssl_cipher_list = EECDH+ECDSA+AESGCM EECDH+aRSA+AESGCM EECDH+ECDSA+SHA256 EECDH+aRSA+RC4 EDH+aRSA EECDH RC4 !aNULL !eNULL !LOW !3DES !MD5 !EXP !PSK !SRP !DSS
+mail_location = maildir:~/mail
+auth_username_chars = abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ01234567890.-_@
+
+# IMAP configuration
+protocol imap {
+        mail_max_userip_connections = 10
+        imap_client_workarounds = delay-newmail
+}
+
+# LDA configuration
+protocol lda {
+        postmaster_address = postmaster
+        mail_plugins = sieve
+        quota_full_tempfail = yes
+        deliver_log_format = msgid=%m: %$
+        rejection_reason = Your message to <%t> was automatically rejected:%n%r
+}
+
+# Plugins configuration
+plugin {
+        sieve=~/.dovecot.sieve
+        sieve_dir=~/sieve
+}
+
+# Authentication configuration
+auth_mechanisms = plain login
+
+service auth {
+  # Postfix smtp-auth
+  unix_listener /var/spool/postfix/private/dovecot-auth {
+    mode = 0660
+    user = postfix
+    group = postfix
+  }
+}
