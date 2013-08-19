@@ -2,7 +2,9 @@ class mail::common {
   file { '/etc/postfix':
     ensure => directory;
   '/etc/mailname':
-    content => $domain
+    content => $domain;
+  '/etc/aliases':
+    content => "postmaster: root\nroot: carl"
   }
   exec { 'generate postfix 1024 DH params':
     command => '
@@ -20,5 +22,8 @@ class mail::common {
     provider => shell,
     creates => '/etc/postfix/dh_512.pem',
     require => File['/etc/postfix'];
+  'newaliases':
+    subscribe => File['/etc/aliases'],
+    refreshonly => true
   }
 }
