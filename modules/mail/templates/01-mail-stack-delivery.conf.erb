@@ -2,8 +2,8 @@
 protocols = imap sieve
 disable_plaintext_auth = yes
 ssl = yes
-ssl_cert = </etc/ssl/certs/ssl-mail.<%= @domain %>.pem
-ssl_key = </etc/ssl/private/ssl-mail.<%= @domain %>.key
+ssl_cert = </etc/ssl/certs/mail.<%= @domain %>.pem
+ssl_key = </etc/ssl/private/mail.<%= @domain %>.key
 ssl_cipher_list = EECDH+ECDSA+AESGCM EECDH+aRSA+AESGCM EECDH+ECDSA+SHA256 EECDH+aRSA+RC4 EDH+aRSA EECDH RC4 !aNULL !eNULL !LOW !3DES !MD5 !EXP !PSK !SRP !DSS
 mail_location = maildir:~/mail
 auth_username_chars = abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ01234567890.-_@
