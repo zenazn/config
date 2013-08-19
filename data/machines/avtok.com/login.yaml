@@ -5,6 +5,7 @@ classes:
 
 secrets::ssl:
   - avtok.com
+  - mail.avtok.com
 
 mail::destinations:
   - avtok.com
