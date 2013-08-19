@@ -22,7 +22,7 @@ class mail::common {
     provider => shell,
     creates => '/etc/postfix/dh_512.pem',
     require => File['/etc/postfix'];
-  'newaliases':
+  '/usr/bin/newaliases':
     subscribe => File['/etc/aliases'],
     refreshonly => true
   }
