@@ -1,4 +1,4 @@
-class secrets($ssl) {
+class secrets($ssl=[]) {
   file { "/etc/ssl/private":
     ensure => directory,
     mode => "700";
