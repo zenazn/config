@@ -25,8 +25,18 @@ smtpd_tls_received_header = yes
 
 # Security and Spam
 disable_vrfy_command = yes
-smtpd_client_restrictions = permit_mynetworks, reject_rbl_client zen.spamhaus.org, reject_rbl_client bl.spamcop.net, permit
-smtpd_recipient_restrictions = reject_unknown_sender_domain, reject_unknown_recipient_domain, reject_unauth_pipelining, permit_mynetworks, reject_unauth_destination
+smtpd_client_restrictions =
+    permit_mynetworks,
+    reject_rbl_client zen.spamhaus.org,
+    reject_rbl_client bl.spamcop.net,
+    permit
+smtpd_recipient_restrictions =
+    reject_unknown_sender_domain,
+    reject_unknown_recipient_domain,
+    reject_unauth_pipelining,
+    permit_mynetworks,
+    reject_unauth_destination,
+    check_policy_service inet:127.0.0.1:60000
 smtpd_sender_restrictions = reject_unknown_sender_domain
 
 # Dovecot

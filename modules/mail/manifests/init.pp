@@ -2,7 +2,7 @@ class mail($destinations=[]) {
   include mail::common
   include mail::virtual
 
-  package { 'mail-stack-delivery':
+  package { ['mail-stack-delivery', 'postgrey']:
   }
 
   file { '/etc/postfix/main.cf':
