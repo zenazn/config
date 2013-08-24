@@ -3,3 +3,7 @@ relay.avtok.com:
   parameters:
     machine_type: login
   environment: production
+oobii.avtok.com:
+  parameters:
+    machine_type: backup
+  environment: production
