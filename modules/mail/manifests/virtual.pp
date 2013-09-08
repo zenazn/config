@@ -1,6 +1,7 @@
-class mail::virtual($addresses={}) {
+class mail::virtual {
+  $users = hiera("users")
   file { '/etc/postfix/virtual':
-    content => join(join_keys_to_values($addresses, ' '), "\n")
+    content => template('mail/virtual.erb')
   }
   exec { '/usr/sbin/postmap /etc/postfix/virtual':
     subscribe => File['/etc/postfix/virtual'],

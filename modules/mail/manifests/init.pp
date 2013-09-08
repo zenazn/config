@@ -1,4 +1,4 @@
-class mail($destinations=[]) {
+class mail {
   include mail::common
   include mail::virtual
 
