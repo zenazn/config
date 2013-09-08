@@ -23,3 +23,6 @@ users:
       - christian@avtok.com
     authorized_keys:
       - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDX4jEKOW9eyveujhG23g92llFOiLLYng7o2u3SCSmdAJHutng27m+2nE3vnnII/GzLNAx05f6K13TMRoZuAEkXVc7/mrK2BVqDgRJSiXFpn1GV0XUlEN/wv29XWiVpvn0z62/GjMwfFE1BZB2/nfAiR2oc4cG/f7ECTPqwwLs8XwP+t3YHFilK3kdcBJlmBP6jejjOPp+Cv2NwXXdrL622ElH7opMa4xr3WY/V4FuspF5l6gf/T9J91rkjEW8K/xsGK/gRZnYTtitVWn/jz1oyRlybmC4+kx16DRbUw1/961HbKMr5NpXInTQ10eKyChkjGd8pzK4NHJcZX10wsj3p christian@athena
+
+users::users:
+  - carl
