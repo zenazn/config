@@ -9,3 +9,7 @@ secrets::ssl:
 
 mail::destinations:
   - avtok.com
+
+users::users:
+  - carl
+  - christian

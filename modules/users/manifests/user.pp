@@ -4,7 +4,7 @@ define users::user {
     'shell' => '/bin/bash',
     'groups' => []
   }
-  $user_data = hiera_hash("users::users")
+  $user_data = hiera_hash("users")
   $user = merge($defaults, $user_data[$name])
 
   user { $name:

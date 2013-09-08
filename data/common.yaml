@@ -2,7 +2,7 @@
 classes:
   - base
 
-users::users:
+users:
   carl:
     name: Carl Jackson
     groups:
