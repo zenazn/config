@@ -7,7 +7,7 @@ users:
     name: Carl Jackson
     email:
       - carl@avtok.com
-      - ""@avtok.com
+      - '""@avtok.com'
       - ^_^@avtok.com
       - ~@avtok.com
       - carl@andover09.com
