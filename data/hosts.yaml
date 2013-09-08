@@ -7,3 +7,7 @@ oobii.avtok.com:
   parameters:
     machine_type: backup
   environment: production
+badger.avtok.com:
+  parameters:
+    machine_type: seed
+  environment: production
