@@ -8,6 +8,6 @@ emails = {}
     emails[address] = user
   end
 end
-[domains.sort, emails.sort].flatten.each do |key, value| %>
+(domains.sort + emails.sort).each do |key, value| -%>
 <%= key %> <%= value %>
 <% end %>
