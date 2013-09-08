@@ -8,6 +8,6 @@ require 'yaml'
 node = ARGV[0]
 raise "No host provided" if node.nil?
 
-hosts = YAML.load_file(File.join(File.dirname(__FILE__), 'hosts.yaml'))
+hosts = YAML.load_file(File.join(File.dirname(__FILE__), 'data', 'hosts.yaml'))
 
 print YAML.dump(hosts.fetch(node))
