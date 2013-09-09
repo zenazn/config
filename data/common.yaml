@@ -11,6 +11,7 @@ users:
       - ^_^@avtok.com
       - ~@avtok.com
       - carl@andover09.com
+      - postmaster@avtok.com
     groups:
       - sudo
       - adm
