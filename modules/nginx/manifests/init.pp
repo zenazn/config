@@ -11,7 +11,7 @@ class nginx($sites=[]) {
     ensure => present,
     source => "puppet:///modules/nginx/nginx.conf";
 
-  ["/etc/nginx/sites-available", "/etc/nginx/sites-enabled"]:
+  ["/etc/nginx/sites-available", "/etc/nginx/sites-enabled", "/etc/nginx/auth"]:
     ensure => directory;
 
   ["/etc/nginx/sites-available/default", "/etc/nginx/sites-enabled/default"]:

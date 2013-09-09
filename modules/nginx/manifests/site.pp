@@ -16,4 +16,12 @@ define nginx::site($enabled=true) {
       ensure => absent
     }
   }
+
+  # Authentication
+  $auth = hiera("/etc/nginx/auth/$name", '')
+  if $auth != '' {
+    file { "/etc/nginx/auth/$name":
+      content => $auth
+    }
+  }
 }
