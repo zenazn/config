@@ -1,3 +1,6 @@
 ---
 nginx::sites:
   - badger.avtok.com
+
+secrets::ssl:
+  - badger.avtok.com

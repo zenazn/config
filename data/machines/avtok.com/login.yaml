@@ -4,7 +4,6 @@ classes:
   - mail
 
 secrets::ssl:
-  - avtok.com
   - mail.avtok.com
 
 users::users:
