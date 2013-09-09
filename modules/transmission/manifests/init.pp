@@ -1,4 +1,4 @@
 class transmission {
-  package { "transmission-cli":
+  package { "transmission-daemon":
   }
 }
