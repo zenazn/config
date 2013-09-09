@@ -1,0 +1,3 @@
+---
+nginx::sites:
+  - badger.avtok.com
