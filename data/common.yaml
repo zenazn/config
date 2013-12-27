@@ -24,6 +24,7 @@ users:
       - christian@avtok.com
     authorized_keys:
       - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDX4jEKOW9eyveujhG23g92llFOiLLYng7o2u3SCSmdAJHutng27m+2nE3vnnII/GzLNAx05f6K13TMRoZuAEkXVc7/mrK2BVqDgRJSiXFpn1GV0XUlEN/wv29XWiVpvn0z62/GjMwfFE1BZB2/nfAiR2oc4cG/f7ECTPqwwLs8XwP+t3YHFilK3kdcBJlmBP6jejjOPp+Cv2NwXXdrL622ElH7opMa4xr3WY/V4FuspF5l6gf/T9J91rkjEW8K/xsGK/gRZnYTtitVWn/jz1oyRlybmC4+kx16DRbUw1/961HbKMr5NpXInTQ10eKyChkjGd8pzK4NHJcZX10wsj3p christian@athena
+      - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCn+r32Esl/uN8A1hlnQDGzo1NK4kvVIAikDAOfWcVGiv5lD7nF8W5n7YVpx2eXbYxTXawBDV1pOJWjcbw3F5bDQWcFyXS32BSC8nD/G0lgH7k5vX204kwPKPyH/WsCmjqFH2lF35kZxoaAx/OAyiBMEfFZQ6cOWCYFM6e0SOWE4Tf4r0c6vLZlHm2qtvB/8FEGyTrK8t6/9rnBhHCiCwxKe6lty5PwgtY63aaUQ/8BlHZTwuRcDqGfCLeavw5IgO1x1lwuXMwxDe+MBY8a/dSCgm1oHCjYgWYVNolwFA+UBVyinYJtgQAll6tmbDttnq1FP7eU+1tuHQ0/7JskS+PV christian@leto
 
 users::users:
   - carl
