@@ -7,3 +7,4 @@ nginx::sites:
 
 secrets::ssl:
   - avtok.com
+  - goji.io
