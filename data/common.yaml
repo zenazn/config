@@ -12,6 +12,8 @@ users:
       - ~@avtok.com
       - carl@andover09.com
       - postmaster@avtok.com
+      - carl@goji.io
+      - postmaster@goji.io
     groups:
       - sudo
       - adm
