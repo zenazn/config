@@ -18,6 +18,16 @@ class nginx($sites=[]) {
     ensure => absent;
   }
 
+  exec { 'generate nginx 2048 DH params':
+    command => '
+    umask 077
+    openssl dhparam -out /etc/nginx/dh_2048.pem 2048
+    ',
+    provider => shell,
+    creates => '/etc/nginx/dh_2048.pem',
+    require => File['/etc/nginx/'];
+  }
+
   nginx::site { $sites:
   }
 }
