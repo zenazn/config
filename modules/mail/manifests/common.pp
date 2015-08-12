@@ -6,21 +6,13 @@ class mail::common {
   '/etc/aliases':
     content => "postmaster: root\nroot: carl"
   }
-  exec { 'generate postfix 1024 DH params':
+  exec { 'generate postfix 2048 DH params':
     command => '
     umask 077
-    openssl gendh -out /etc/postfix/dh_1024.pem -2 1024
+    openssl dhparam -out /etc/postfix/dh_2048.pem 2048
     ',
     provider => shell,
-    creates => '/etc/postfix/dh_1024.pem',
-    require => File['/etc/postfix'];
-  'generate postfix 512 DH params':
-    command => '
-    umask 077
-    openssl gendh -out /etc/postfix/dh_512.pem -2 512
-    ',
-    provider => shell,
-    creates => '/etc/postfix/dh_512.pem',
+    creates => '/etc/postfix/dh_2048.pem',
     require => File['/etc/postfix'];
   '/usr/bin/newaliases':
     subscribe => File['/etc/aliases'],

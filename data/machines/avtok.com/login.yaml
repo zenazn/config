@@ -3,9 +3,6 @@ classes:
   - nginx
   - mail
 
-secrets::ssl:
-  - mail.avtok.com
-
 users::users:
   - carl
   - christian

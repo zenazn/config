@@ -8,3 +8,4 @@ nginx::sites:
 secrets::ssl:
   - avtok.com
   - goji.io
+  - mail.avtok.com
